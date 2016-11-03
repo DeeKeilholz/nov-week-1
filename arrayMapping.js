@@ -12,24 +12,20 @@ var input = [
   { x: 8, y: 15 } // input [2] 289 (square root is 17)
 ];
 
-
+// cb function
 		function add_num(value) {
       var total_numSquared = 0;
-			total_numSquared += (value.x * value.x) + (value.y * value.y);
+			total_numSquared += Math.pow(value.x, 2) + Math.pow(value.y, 2);
       return Math.sqrt((total_numSquared));
 		}
 
+ // passing cb function add_num into my map method
  var new_array = input.map(add_num);
 
  console.log(new_array);
 
-// var newArray = input.map(function (obj) {
-//
-// console.log(newArray);
-//
 
 
-Math.sqrt()
 
 
 // console.log(result[0] === 5);
