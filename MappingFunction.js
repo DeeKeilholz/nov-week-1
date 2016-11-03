@@ -15,10 +15,7 @@ function map (data, _cb) {
   return output;
 }
 
-var array = ["ground", "control", "to", "major", "tom"];
-
-
-var elmLength = map(array, function(string) {
+var elmLength = map(["ground", "control", "to", "major", "tom"], function(string) {
   return string.length;
 });
 
